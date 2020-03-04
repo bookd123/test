@@ -1,1 +1,164 @@
-123
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>m3u8合并注册</title>
+    <style type="text/css">
+        body {
+            background-color: #9C0;
+        }
+    </style>
+
+    <script>
+        var XDH$eh1 = 2;
+
+        function printInputValue() {
+
+            var wwNeDyo2 = window["document"]['getElementById']("demo1")['value'];
+            var YOa3 = 255;
+            var QY_vGA4 = YOa3['toString'](16);
+            var LAOlbpjLb5 = window["parseInt"](QY_vGA4, 16);
+            var OcRG_ml6 = [];
+            var M7 = "23_1"
+            if (M7 == "23_1") { }
+            if (wwNeDyo2['length'] == 29) {
+                OcRG_ml6 = wwNeDyo2['split']('-');
+                var YzsM8 = window["parseInt"](OcRG_ml6[0], 16);
+                var GSfdUEmlk9 = window["parseInt"](OcRG_ml6[1], 16);
+                var uFSleZ10 = window["parseInt"](OcRG_ml6[2], 16);
+                var $jBBPp11 = window["parseInt"](OcRG_ml6[3], 16);
+                var BbreJs12 = window["parseInt"](OcRG_ml6[4], 16);
+                var jarTn13 = window["parseInt"](OcRG_ml6[5], 16);
+                var iWayUBd14 = window["parseInt"](OcRG_ml6[6], 16);
+                var Y15 = window["parseInt"](OcRG_ml6[7], 16);
+                var wevdkBR16 = window["parseInt"](OcRG_ml6[8], 16);
+                var JCtq17 = window["parseInt"](OcRG_ml6[9], 16);
+                var P18 = 0;
+                var vRdUU_19 = 0;
+                var wGIKPaBe20 = 0;
+                if (YzsM8 > 130) {
+                    P18 = window["Math"]['round'](YzsM8 * 0.77)
+                } else if (YzsM8 <= 70) {
+                    P18 = YzsM8 + 118
+                } else {
+                    P18 = window["Math"]['round']((YzsM8 / 2.1) * 3)
+                } if ($jBBPp11 > 130) {
+                    vRdUU_19 = window["Math"]['round']($jBBPp11 * 0.77)
+                } else if (YzsM8 <= 70) {
+                    vRdUU_19 = $jBBPp11 + 118
+                } else {
+                    vRdUU_19 = window["Math"]['round'](($jBBPp11 / 2.1) * 3)
+                }
+                wGIKPaBe20 = ((P18 * vRdUU_19) + 60) * 4568;
+                var JmIDs21 = wGIKPaBe20['toString']();
+                var hRJrvrXdh22 = JmIDs21['substring'](0, 2);
+                var Q23 = window["parseInt"](hRJrvrXdh22);
+                var tFoqNdRA24 = (BbreJs12 * jarTn13 * iWayUBd14 * Y15) + wevdkBR16 + 15000;
+                var GsJtgo25 = tFoqNdRA24['toString'](16);
+                var wuCyYs26 = GsJtgo25['substring'](0, 2)['toUpperCase']();
+                wuCyYs26 = (window["Array"](XDH$eh1)['join']('0') + wuCyYs26)['slice'](-XDH$eh1);
+                var aC27 = GsJtgo25['substr'](2, 2)['toUpperCase']();
+                aC27 = (window["Array"](XDH$eh1)['join']('0') + aC27)['slice'](-XDH$eh1);
+                var jAQBRl28 = Q23['toString'](16)['toUpperCase']();
+                jAQBRl28 = (window["Array"](XDH$eh1)['join']('0') + jAQBRl28)['slice'](-XDH$eh1);
+                var Ws$m29 = P18['toString'](16)['toUpperCase']();
+                Ws$m29 = (window["Array"](XDH$eh1)['join']('0') + Ws$m29)['slice'](-XDH$eh1);
+                var PevrNk30 = vRdUU_19['toString'](16)['toUpperCase']();
+                PevrNk30 = (window["Array"](XDH$eh1)['join']('0') + PevrNk30)['slice'](-XDH$eh1);
+                var pMalV31 = wuCyYs26 + "-" + aC27 + "-" + jAQBRl28 + "-" + Ws$m29 + "-" + PevrNk30;
+                window["document"]['getElementById']("demo2")['innerHTML'] = pMalV31
+            }
+        }
+    </script>
+
+    <script type="text/javascript">
+        var caution = false
+        function setCookie(name, value, expires, path, domain, secure) {
+            var curCookie = name + "=" + escape(value) +
+                ((expires) ? ";expires=" + expires.toGMTString() : "") +
+                ((path) ? "; path=" + path : "") +
+                ((domain) ? "; domain=" + domain : "") +
+                ((secure) ? ";secure" : "")
+            if (!caution || (name + "=" + escape(value)).length <= 4000) {
+                document.cookie = curCookie
+            }
+            else if (confirm("Cookie exceeds 4KB and will be cut!")) {
+                document.cookie = curCookie
+            }
+        }
+        function getCookie(name) {
+            var prefix = name + "="
+            var cookieStartIndex = document.cookie.indexOf(prefix)
+            if (cookieStartIndex == -1) {
+                return null
+            }
+            var cookieEndIndex = document.cookie.indexOf(";", cookieStartIndex + prefix.length)
+            if (cookieEndIndex == -1) {
+                cookieEndIndex = document.cookie.length
+            }
+            return unescape(document.cookie.substring(cookieStartIndex + prefix.length, cookieEndIndex))
+        }
+        function deleteCookie(name, path, domain) {
+            if (getCookie(name)) {
+                document.cookie = name + "=" +
+                    ((path) ? "; path=" + path : "") +
+                    ((domain) ? "; domain=" + domain : "") +
+                    "; expires=Thu, 01-Jan-70 00:00:01 GMT"
+            }
+        }
+        function fixDate(date) {
+            var base = new Date(0)
+            var skew = base.getTime()
+            if (skew > 0) {
+                date.setTime(date.getTime() - skew)
+            }
+        }
+        var now = new Date()
+        fixDate(now)
+        now.setTime(now.getTime() + 365 * 24 * 60 * 60 * 1000)
+        var visits = getCookie("counter")
+        if (!visits) {
+            visits = 1;
+        }
+        else {
+            visits = parseInt(visits) + 1;
+        }
+        setCookie("counter", visits, now)
+        document.write("您是到访的第" + visits + "位用户！")
+        //    <script type="text/javascript" src="https://s96.cnzz.com/z_stat.php?id=1276620181&web_id=1276620181"></script>
+    </script>
+</head>
+<body>
+    <br />
+    <hr />
+    <br />
+    激活码:<br />
+    <br />
+    <input type="text" id="demo1" value="" placeholder="请输入激活码(包括-)" />
+    <br />
+    <br />
+    密码:<br />
+    <p id="demo2"></p>
+
+    <br />
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button onclick="printInputValue()" id="button1" style=" background:#00ffff
+">
+        生成
+    </button> <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    QQ:2653928713<br />
+    <hr />
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1276620181'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s96.cnzz.com/z_stat.php%3Fid%3D1276620181%26online%3D1' type='text/javascript'%3E%3C/script%3E"));</script>
+
+</body>
+</html>
